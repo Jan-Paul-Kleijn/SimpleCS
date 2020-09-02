@@ -1,0 +1,51 @@
+@font-face {
+  font-family:[font-family for content];
+  src:url("extrabold_normal.woff2") format("woff2"),
+      url("extrabold_normal.woff") format("woff"),
+      url("extrabold_normal.otf") format("opentype");
+  font-weight:800;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:[font-family for content];
+  src:url("thin_normal.woff2") format("woff2"),
+      url("thin_normal.woff") format("woff"),
+      url("thin_normal.otf") format("opentype");
+  font-weight:300;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:[font-family for content];
+  src:url("thin_italic.woff2") format("woff2"),
+      url("thin_italic.woff") format("woff"),
+      url("thin_italic.otf") format("opentype");
+  font-weight:300;
+  font-style:italic;
+}
+
+@font-face {
+  font-family:[font-family for content];
+  src:url("medium_normal.woff2") format("woff2"),
+      url("medium_normal.woff") format("woff"),
+      url("medium_normal.otf") format("opentype");
+  font-weight:500;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:[font-family for titles];
+  src:url("titles_regular.woff") format("woff"),
+      url("titles_regular.otf") format("opentype");
+  font-weight:500;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:[font-family for titles];
+  src:url("titles_bold.woff") format("woff"),
+      url("titles_bold.otf") format("opentype");
+  font-weight:900;
+  font-style:normal;
+}
