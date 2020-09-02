@@ -1,0 +1,31 @@
+For use with SNEWS:
+Start the session in the ckeditor/plugins/filemanager/connectors/php/filemanager.php file:
+
+session_start();
+
+add the following code to the ckeditor/plugins/filemanager/connectors/php/filemanager.config.php file:
+
+/* define the protocol (http or https) */
+define( '_PROTOCOL', (isset($_SERVER['HTTPS']) && filter_var($_SERVER['HTTPS'], FILTER_VALIDATE_BOOLEAN)?'https':'http') );
+
+/* create the token
+function token() {
+  $a = md5(substr(session_id(), 2, 7));
+  $b = $_SERVER['HTTP_USER_AGENT'];
+  $token = md5($a.$b._PROTOCOL."://".$_SERVER['HTTP_HOST']."/");
+  return $token;
+}
+
+/**
+ *	Check if user is authorized
+ *
+ *	@return boolean true is access granted, false if no access
+ */
+function auth() {
+  // You can insert your own code over here to check if the user is authorized.
+  // If you use a session variable, you've got to start the session first (session_start())
+  /* Check if the token exists */ 
+  $token = token();
+  return (isset($_SESSION[_PROTOCOL."://".$_SERVER['HTTP_HOST']."/Logged_In"]) && $_SESSION[_PROTOCOL."://".$_SERVER['HTTP_HOST']."/Logged_In"] == $token);
+}
+
