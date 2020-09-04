@@ -1,21 +1,20 @@
-# SimpleCS
-
-Simple CS
-Lightweight XHTML Content System
-
-isHomepage()
-isUser
-frontendMode()
-getIdentity()
-is404()
-isArticle(slug)
-isPage(slug)
-isCategory(slug)
-isMainCategory(slug)
-isEvent(slug)
-isSubCategory(slug)
-getCatIdBySEF(slug)
-getCat(categoryID)
-s(name)
-l(key)
-tabindex(interval)
+<h1>SimpleCS</h1>
+<p><em>Lightweight XHTML Content System</em></p>
+<ul>
+  <li>isHomepage()</li>
+  <li>isUser</li>
+  <li>frontendMode()</li>
+  <li>getIdentity()</li>
+  <li>is404()</li>
+  <li>isArticle(slug)</li>
+  <li>isPage(slug)</li>
+  <li>isCategory(slug)</li>
+  <li>isMainCategory(slug)</li>
+  <li>isEvent(slug)</li>
+  <li>isSubCategory(slug)</li>
+  <li>getCatIdBySEF(slug)</li>
+  <li>getCat(categoryID)</li>
+  <li>s(name)</li>
+  <li>l(key)</li>
+  <li>tabindex(interval)</li>
+</ul>
