@@ -5,7 +5,9 @@ SimpleCS is a lightweight Content System written in PHP and paired with a MySQL 
 
 Included is an events calendar that sports various modes of display and *a handy javascript enhanced gallery* that is coupled with the FCKeditor plugin called *Artistry*. For uploading pictures and the like, SimpleCS is equipped with *an easy to use Filemanager*. 
 
-The blog pages and events can be expanded with comments which can be turned on or off on each page. A straightforward website contact page is standard available after installation. Further features include Clean URLs, RSS/Atom, 
+The blog pages and events can be expanded with comments which can be turned on or off on each page. A straightforward website contact page is standard available after installation. Further features include Clean URLs, RSS/Atom and more.
+
+<img width="200" src="https://web2.werkzien.nl/userfiles/admin.png" alt="Admin page" />
 
 <h2>Installation</h2>
 <p>Copy all to your web directory and run scs-install.php</p>
