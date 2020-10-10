@@ -11,33 +11,46 @@ The blog pages and events can be expanded with comments which can be turned on o
 
 <h2>Installation</h2>
 The installation of SimpleCS is pretty straightforward.
-- Copy all files in this repository to your web directory.
-- Create a new MySQL database along with a database user and make sure that the user has all rights to use this database.
-- Edit *scs-config.php* to reflect the database and database user information that you just created.
-- Run *scs-install.php* to create the neccessary database tables and content.
+
+* Copy all files in this repository to your web directory.
+* Create a new MySQL database along with a database user and make sure that the user has all rights to use this database.
+* Edit *scs-config.php* to reflect the database and database user information that you just created.
+* Run *scs-install.php* to create the neccessary database tables and content.
 
 <h2>Logging in for the first time</h2>
 After you installed SimpleCS you can log in by navigating to *https://www.yourdomain.com/login*, where *yourdomain.com* is a placeholder for your domain name and TLD. To login you can fill in your username and password, which are set both as *administrator* by default. After you log in for the first time it's very important to change the default username and password to make sure that only you have access to the backend of your website.
 
 <h2>Functions available</h2>
-* isHomepage()
+
+### isHomepage()
+
 Indicates if the page shown is the homepage.
-returns `true` or `false` (bool)
-* isUser()
+
+Returns `true` or `false` (bool)
+
+### isUser()
+
 Indicates if the current user is logged in or not.
-returns `YES` or `NO` (string)
-* frontendMode()
-* getIdentity()
-* is404()
-* isArticle(slug)
-* isPage(slug)
-* isCategory(slug)
-* isMainCategory(slug)
-* isEvent(slug)
-* isSubCategory(slug)
-* getCatIdBySEF(slug)
-* getCat(categoryID)
-* s(name)
-* l(key)
-* tabindex(interval)
+
+Returns `YES` or `NO` (string)
+
+### frontendMode()
+
+Indicates if the current page shown is the frontend or the backend.
+
+Returns `true` or `false` (bool)
+
+### getIdentity()
+### is404()
+### isArticle(slug)
+### isPage(slug)
+### isCategory(slug)
+### isMainCategory(slug)
+### isEvent(slug)
+### isSubCategory(slug)
+### getCatIdBySEF(slug)
+### getCat(categoryID)
+### s(name)
+### l(key)
+### tabindex(interval)
 
