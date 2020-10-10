@@ -30,9 +30,9 @@ Returns `true` or `false` (bool)
 
 ### isUser()
 
-Indicates if the current user is logged in or not.
+Indicates if the current user is logged in as administrator or not.
 
-Returns `YES` or `NO` (string)
+Returns `true` or `false` (bool)
 
 ### frontendMode()
 
@@ -41,16 +41,79 @@ Indicates if the current page shown is the frontend or the backend.
 Returns `true` or `false` (bool)
 
 ### getIdentity()
+
+Identifies the name of the underlying page that produces the current webpage that is shown. Normally speaking this would be *index.php*.
+
+Returns the physical page name (string)
+
 ### is404()
+
+Indicates if the current page exists or not.
+
+Returns `true` or `false` (bool)
+
 ### isArticle(slug)
+
+Indicates if the page named [*slug*] is a **blogpage**.
+
+Returns `true` or `false` (bool)
+
 ### isPage(slug)
-### isCategory(slug)
-### isMainCategory(slug)
+
+Indicates if the page named [*slug*] is a **webpage**.
+
+Returns `true` or `false` (bool)
+
 ### isEvent(slug)
+
+Indicates if the page named [*slug*] is a **event page** (for the agenda).
+
+Returns `true` or `false` (bool)
+
+### isCategory(slug)
+
+Indicates if the page named [*slug*] is a **blog category**.
+
+Returns `true` or `false` (bool)
+
+### isMainCategory(slug)
+
+Indicates if the the page named [*slug*] is a main category of the blog.
+
+Returns `true` or `false` (bool)
+
 ### isSubCategory(slug)
+
+Indicates if the page named [*slug*] is a sub category of the blog
+
+Returns `true` or `false` (bool)
+
 ### getCatIdBySEF(slug)
+
+This function can be used to get the *id* of the category by *slug*.
+
+Returns the category id (INT)
+
 ### getCat(categoryID)
+
+This function can be used to get the *slug* of the category by *id*.
+
+Returns the category slug (INT)
+
 ### s(name)
+
+Retrieve a value from the SimpleCS settings.
+
+Returns the setting value (string)
+
 ### l(key)
+
+Translates a key to the language set in the SimpleCS settings.
+
+Returns the translated value that corresponds with the provided [*key*] (string)
+
 ### tabindex(interval)
 
+Retrieves the current tabindex. The [*interval*] value can be used to start the tabindex with this number.
+
+Returns the (HTML) tabindex (INT)
