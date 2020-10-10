@@ -18,7 +18,7 @@ The installation of SimpleCS is pretty straightforward.
 * Run *scs-install.php* to create the neccessary database tables and content.
 
 <h2>Logging in for the first time</h2>
-After you installed SimpleCS you can log in by navigating to `https&#58;//www.yourdomain.com/login`, where *yourdomain.com* is a placeholder for your domain name and TLD. 
+After you installed SimpleCS you can log in by navigating to `https&#58;//www&#46;yourdomain&#46;com/login`, where *yourdomain.com* is a placeholder for your domain name and TLD. 
 
 To login you can fill in your username and password, which are set both as *administrator* by default.
 
