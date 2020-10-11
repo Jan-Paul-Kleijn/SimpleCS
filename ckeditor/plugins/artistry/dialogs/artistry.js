@@ -8,7 +8,7 @@ Created by Jan-Paul Kleijn
 (function(){
   CKEDITOR.dialog.add('artistry',function(editor) {
     return {
-      title:editor.lang.mp4player.title,
+      title:editor.lang.artistry.title,
       minWidth:CKEDITOR.env.ie&&CKEDITOR.env.quirks?568:550,
       minHeight:450,
       onShow:function(){
